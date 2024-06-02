@@ -1,5 +1,5 @@
 # automation-signup
-prerequisites:
+Prerequisites:
 - Install Java 17
 - Build tool gradle
 - Drivers for Windows machines 
