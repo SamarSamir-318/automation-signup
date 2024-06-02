@@ -1,0 +1,38 @@
+plugins {
+    id("java")
+}
+
+group = "org.example"
+version = "1.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+}
+
+//dependencies {
+    // Selenium WebDriver dependencies
+    //testImplementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    // TestNG dependencies
+    //testImplementation 'org.testng:testng:7.4.0'
+
+    //testImplementation 'junit:junit:4.13.2'
+
+//}
+
+dependencies {
+    implementation 'junit:junit:4.13.1'
+
+    //testImplementation 'io.cucumber:cucumber-java:' + cucumberVersion
+    //testImplementation 'io.cucumber:cucumber-junit:5.6.0'
+    //testImplementation 'junit:junit:4.13.2'
+    testImplementation group: 'junit', name: 'junit', version: '4.4'
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    implementation 'org.seleniumhq.selenium:selenium-chrome-driver:3.141.59'
+    testImplementation 'org.testng:testng:7.1.0'
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1'
+
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

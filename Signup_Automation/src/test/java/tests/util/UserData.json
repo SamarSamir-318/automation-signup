@@ -1,0 +1,14 @@
+[
+{
+ 	"firstname" : "Samar",
+ 	"lastname" : "Samir" ,
+ 	"email" : "s.samir11@test.com",
+ 	"password" : "12345678",
+	"address": "5 haram street,cairo",
+	"state": "Cairo",
+	"city": "Cairo",
+	"zipcode": "123456",
+	"mobile": "012345678905"
+}
+
+]
