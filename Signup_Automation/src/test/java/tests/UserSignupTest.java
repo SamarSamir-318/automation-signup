@@ -23,7 +23,7 @@ public class UserSignupTest extends TestBase {
         homeObject = new HomePage((WebDriver) driver);
         homeObject.openRegistrationPage();
         registerObject = new UserSignupPage((WebDriver) driver);
-        registerObject.userRegistration
+        registerObject.signup
                 (jsonReader.name, jsonReader.email, jsonReader.password,
                         jsonReader.firstname, jsonReader.lastname, jsonReader.address, jsonReader.city,
                         jsonReader.zipcode, jsonReader.state, jsonReader.mobile);

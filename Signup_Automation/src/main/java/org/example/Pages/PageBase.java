@@ -30,11 +30,7 @@ public class PageBase {
 	{
 		textElement.sendKeys(value);
 	}
-//	protected void createAccount(){
-//		WebElement element = driver.findElement(By.cssSelector("button[data-qa='create-account']"));
-//		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-//		element.click();
-//	}
+
 	public void scrollToBottom() 
 	
 	{

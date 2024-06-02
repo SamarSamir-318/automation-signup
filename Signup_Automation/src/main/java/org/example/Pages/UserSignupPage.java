@@ -50,7 +50,7 @@ public class UserSignupPage extends PageBase
 	@FindBy(xpath="//*[@id='form']/div/div/div/div/a")
 	WebElement cont;
 
-	public void userRegistration(String name ,  String email , String password,String fname,String lname,String address,String state,String city,String zipcode,String mobile) throws InterruptedException {
+	public void signup(String name , String email , String password, String fname, String lname, String address, String state, String city, String zipcode, String mobile) throws InterruptedException {
 		setTextElementText(nameTxtBox, name);
 		setTextElementText(emailTxtBox, email);
 		clickButton(registerBtn);

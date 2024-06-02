@@ -44,7 +44,6 @@ public class TestBase {
     @Parameters({"browser"})
     public void startDriver(@Optional("chrome") String browserName) {
         if (browserName.equalsIgnoreCase("chrome")) {
-            //for mac
             System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/drivers/chromedriver.exe");
 
             driver = new ChromeDriver(chromeOption());
@@ -69,7 +68,7 @@ public class TestBase {
         driver.quit();
     }
 
-    // take screenshot when test case fail and add it in the Screenshot folder
+    // take screenshot incase of failed tests
     @AfterMethod
     public void screenshotOnFailure(ITestResult result) {
         if (result.getStatus() == ITestResult.FAILURE) {
